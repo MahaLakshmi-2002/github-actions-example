@@ -37,6 +37,12 @@ jobs:
         registry: docker.io
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-
+        password: ${{ secrets.DOCKER_ACCESS_TOKEN }}  # Use the access token as the password
+        addLatest: false
+        addTimestamp: false
+        enableBuildKit: false
+        multiPlatform: false
+        overrideDriver: false
+        pushImage: true
     
+        
