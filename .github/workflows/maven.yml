@@ -36,5 +36,5 @@ jobs:
         tags: latest
         registry: docker.io
         dockerfile: Dockerfile
-        username: MahaLakshmi2002
+        username: mahaLakshmi2002
         password: maha14072002
