@@ -59,7 +59,7 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
     - name: Update kube config
-      run: aws eks update-kubeconfig --name githubaction --region us-east-1
+      run: aws eks update-kubeconfig --name githubaction --region us-east-1 --role-arn arn:aws:iam::094688878350:role/ekscluter
 
     - name: Deploy image to Amazon EKS
       run: kubectl apply -f deployment.yaml
